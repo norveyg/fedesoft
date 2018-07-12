@@ -1,0 +1,128 @@
+nav{
+    background:#a8a8a8;
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    display: inline;
+    overflow: hidden;
+}
+
+nav img{
+    width: 60px;
+    height: 60px;
+}
+nav a{
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+nav a.active {
+    background-color: rgb(98, 104, 98);
+    color: white;
+}
+nav > div{
+    display: inline;
+}
+
+.imagen-centro{
+    position: relative;
+    margin-left: 14%;
+}
+
+.compartir{
+    position: absolute;
+    right: 0;
+}
+
+.contenedor{
+    margin-top: 60px;
+}
+
+.contenedor img{
+    width: 60%;
+}
+
+.btn-conf{
+    background: rgb(12, 209, 209);
+    color: white;
+    padding: 40px;
+    border:none
+}
+
+.btn-def{
+    background: black;
+    color: white;
+    padding: 10px;
+    margin-left: -10px;
+    border:none
+}
+
+button:hover{
+    transform: scale(1.5);
+    transition: all .2s ease-in-out;
+
+}
+
+.contenedor > div{
+    width: 40%;
+    display: inline;
+}
+
+a:hover{
+    transform: scale(1.5);
+
+}
+
+
+
+.contenedor-galeria {
+    position: relative;
+    width: 50%;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+}
+
+.contenedor-galeria:hover .image {
+  opacity: 0.3;
+}
+
+.contenedor-galeria:hover .middle {
+  opacity: 1;
+}
+
+.text {
+    color: white;
+    font-size: 16px;
+    /* padding: 39%; */
+    height: 100%;
+    background-color: rgba(21, 136, 182, 0.63);
+    text-align: center;
+}
