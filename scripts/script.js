@@ -55,3 +55,12 @@ var callBack=function(numero,llamado){
 callBack(5,function(respuestaInterna){
     console.log(respuestaInterna);
 });
+
+var palindrome=function(texto){
+    for(i=0;i<=texto.length-1;i++){
+        if(!(texto[i]==texto[(texto.length-1)-i]))
+        return false;        
+    }
+    return true;
+}
+console.log('palindrome='+palindrome('reconocer'));
